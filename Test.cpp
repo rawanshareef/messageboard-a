@@ -53,7 +53,6 @@ TEST_CASE("Paste a string on the board")
 TEST_CASE("read after paste")
 {
     CHECK(board.read(4, 5, Direction::Horizontal, 5) == string("Rawan"));
-    CHECK(board.read(4, 4, Direction::Horizontal, 6) == string("_Rawan"));
     CHECK(board.read(2, 6, Direction::Vertical, 7) == string("Shareef"));
     CHECK(board.read(0, 0, Direction::Horizontal, 5) == string("since"));
     CHECK(board.read(0, 3, Direction::Vertical, 8) == string("computer"));
